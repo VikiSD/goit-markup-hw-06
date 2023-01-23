@@ -807,10 +807,21 @@ transform: translateY(0%);
   align-items: center;
   justify-content: center;
   padding: 6px;
-
+  transform: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.btn-modal-close:focus,
+.btn-modal-close:hover{
+  border-radius: 50%;
+  background-color: var(--secondary-accent-color);
+  
+}
 
+.btn-modal-close:focus>.close,
+.btn-modal-close:hover>.close {
+  fill: var(--main-light-color);
+}
 
 .modal-container{
   display: flex;
